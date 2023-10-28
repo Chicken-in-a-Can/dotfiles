@@ -1,0 +1,115 @@
+* {
+    text-color:  #c0caffff;
+    background-color:  rgba(0,0,0,0);
+    dark: #24283b40;
+    // Black
+    black:       #41486840;
+    lightblack:  #545c7e40;
+    //
+    // Red
+    red:         #f7768e40;
+    lightred:    #db4b4b40;
+    //
+    // Green
+    green:       #86af8040;
+    lightgreen:  #88cc2240;
+    //
+    // Yellow
+    yellow:      #e8ae5b40;
+    lightyellow:     #ffa75d40;
+    //
+    // Blue
+    blue:      #7aa2f740;
+    lightblue:     #2ac3de40;
+    //
+    // Magenta
+    magenta:      #bb9af740;
+    lightmagenta:     #ff007c40;
+    //
+    // Cyan
+    cyan:      #7dcfff40;
+    lightcyan:     #5baddd40;
+    //
+    // White
+    white:      #bbaa9940;
+    lightwhite:     #ddccbb40;
+    //
+    // Bold, Italic, Underline
+    highlight:     bold #ffffff40;
+}
+window {
+    height:   100%;
+    width: 30em;
+    location: west;
+    anchor:   west;
+    border:  0px 0px 0px 0px;
+    text-color: @lightwhite;
+}
+mode-switcher {
+    border: 0px 0px 0px 0px;
+    background-color: @lightblack;
+    padding: 4px;
+}
+button selected {
+    border-color: @lightgreen;
+    text-color: @lightgreen;
+}
+inputbar {
+    background-color: @magenta;
+    text-color: @lightwhite;
+    padding: 4px;
+    border: 0px 0px 0px 12px;
+}
+mainbox {
+    expand: true;
+    background-color: #1c1c1c00;
+    spacing: 1em;
+}
+listview {
+    padding: 0em 0.4em 0em 1em;
+    dynamic: false;
+    lines: 0;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected  normal {
+    background-color: @blue;
+}
+element normal active {
+    text-color: @lightblue;
+}
+element normal urgent {
+    text-color: @lightred;
+}
+element alternate normal {
+}
+element alternate active {
+    text-color: @lightblue;
+}
+element alternate urgent {
+    text-color: @lightred;
+}
+element selected active {
+    background-color: @lightblue;
+    text-color: @dark;
+}
+element selected urgent {
+    background-color: @lightred;
+    text-color: @dark;
+}
+error-message {
+    expand: true;
+    background-color: red;
+    border-color: darkred;
+    border: 8px;
+    padding: 1em;
+}
+#inputbar{
+    children: [prompt, textbox-prompt-colon, entry, case-indicator];
+}
+#textbox-prompt-colon{
+    expand: false;
+    str: ": ";
+}

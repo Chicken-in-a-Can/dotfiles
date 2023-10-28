@@ -1,0 +1,64 @@
+* {
+    border: 5px;
+    border-radius: 10px;
+    font-size: 10pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(36, 40, 59, 0.5);
+    border: 2px solid rgba(187, 154, 247, 0.75);
+}
+
+#battery {
+    color: #7dcfff;
+    background: rgba(128, 0, 118, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#battery.charging {
+    color: #7dcfff;
+    background: rgba(255, 0, 236, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#clock {
+    color: #7dcfff;
+    background: rgba(128, 0, 118, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#pulseaudio {
+    color: #7dcfff;
+    background: rgba(128, 0, 118, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#network {
+    color: #7dcfff;
+    background: rgba(128, 0, 118, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+#taskbar.empty {
+    background: rgba(0, 0, 0, 0);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#taskbar {
+    background: rgba(128, 0, 118, 0.75);
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+#taskbar button {
+    background: rgba(0, 0, 0, 0);
+}
+#taskbar button.active{
+    background: #7dcfff;
+}

@@ -1,0 +1,42 @@
+{
+    "layer": "top",
+    "output": "eDP-1",
+    "height": 36,
+    "width": 1900,
+    "modules-left": ["wlr/taskbar"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "battery"],
+    "clock": {
+        "format": "{:%H:%M}  ",
+        "format-alt": "{:%A, %B %d, %Y (%R)}",
+    },
+    "battery": {
+        "format": "{capacity}%"
+    },
+    "pulseaudio": {
+        "format": "  {volume}%",
+        "on-click": "pavucontrol",
+    },
+    "network": {
+        "interface": "wlp0s20f3",
+        "format": "{ifname}",
+        "format-wifi": "{essid}",
+        "format-ethernet": "{ipaddr}",
+        "format-disconnected": "",
+        "tooltop-format": "{ifname}",
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-ethernet": "{ipaddr}",
+        "tooltip-format-disconnected": "",
+        "max-length": 50,
+        "on-click": "systemsettings kcm_networkmanagement",
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 16,
+        "on-click": "activate",
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Kitty": "Terminal",
+        },
+    },
+}
